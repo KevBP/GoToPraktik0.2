@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <Label fx:id="l_source" layoutX="14.0" layoutY="14.0" />
+      <Label fx:id="l_destination" layoutX="14.0" layoutY="83.0" />
+      <Button fx:id="b_source" layoutX="278.0" layoutY="9.0" mnemonicParsing="false" onAction="#action_load" text="File to convert" />
+      <Button fx:id="b_destination" layoutX="278.0" layoutY="78.0" mnemonicParsing="false" onAction="#action_destination" text="New path" />
+      <Button fx:id="b_convert" layoutX="169.0" layoutY="119.0" mnemonicParsing="false" onAction="#action_convert" text="Convert" />
+      <ImageView fitHeight="42.0" fitWidth="200.0" layoutX="187.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@arrow.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="l_done" layoutX="190.0" layoutY="149.0" prefHeight="15.0" prefWidth="40.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
